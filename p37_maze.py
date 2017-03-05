@@ -26,7 +26,7 @@ def bfs():
         for i, j in zip(dx, dy):
             ny = y + j
             nx = x + i
-            if (ny in range(N)) and (nx in range(M)):
+            if ny in range(N) and nx in range(M):
                 if maze[ny][nx] == '.' and pathcost[ny][nx]==INF:
                     que.append([ny,nx])
                     pathcost[ny][nx] = pathcost[y][x]+1
