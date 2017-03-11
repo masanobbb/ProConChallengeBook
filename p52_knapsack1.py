@@ -1,7 +1,10 @@
 
 n = int( input() )
-w = list( map(int, input().split()))
-v = list( map(int, input().split()))
+wv = list( map(int, input().split()))
+
+w = wv[0::2]
+v = wv[1::2]
+
 W = int( input() )
 
 # Binary search
